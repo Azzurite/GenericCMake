@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8.12.1)
 
+set(GENERIC_CMAKE_SUBDIRECTORY "CMake")
+
 ###########################################################################
 ## Project Settings                                                      ##
 ## ----------------                                                      ##
@@ -44,7 +46,7 @@ set(ADD_BOOST false)
 list(APPEND BOOST_COMPONENTS )
 
 # Settings necessary for individual computer configurations go in this file
-include(CMake/user_defined_settings.cmake)
+include(${GENERIC_CMAKE_SUBDIRECTORY}/user_defined_settings.cmake)
 
 ### Build ###
-include(CMake/project_build.cmake)
+include(${GENERIC_CMAKE_SUBDIRECTORY}/project_build.cmake)
