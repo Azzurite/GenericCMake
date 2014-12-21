@@ -1,4 +1,5 @@
 GenericCMake
 ---
 
-This project aims to bring a generic CMake build to projects, so only configuration via variables is needed to set up a project.
+This project aims to have generic CMake files which can easily be used across projects.  
+New project setup should ideally be possible by only checking out this project in it and adjusting the settings file.
