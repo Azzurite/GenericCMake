@@ -7,6 +7,6 @@ New project setup should ideally be possible by only checking out this project i
 How to use
 ----------
 1. Save the repository in the subfolder "CMake" (or any other, don't forget to adjust the path in your config)
-2. Copy the contents of sample_config.cmake as your main CMakeLists.txt
+2. Copy CMakeLists.txt in your project root
 3. Have a "src" subdirectory with appropriate CMakeLists.txt
-4. Adjust the variables to fit your needs and build!
+4. Adjust the variables in CMakeLists.txt and user_config.cmake to fit your needs and build!

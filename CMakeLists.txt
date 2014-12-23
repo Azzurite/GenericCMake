@@ -10,17 +10,11 @@ set(GENERIC_CMAKE_SUBDIRECTORY "CMake")
 # how the project and the build targets will be called
 set(PROJECT_NAME "")
 
-# set the installation directory
-set(INSTALL_DIRECTORY "")
-
 # when false, this will add "src/Main.cpp" to the build and build an executable.
 # otherwise, it will build a library
 set(IS_LIBRARY false)
-# when IS_LIBRARY is true, the headers for the library will be installed here
-set(INSTALL_DIRECTORY_HEADERS "")
 # set the type of the library, either STATIC or SHARED
 set(LIBRARY_TYPE STATIC)
-set(INSTALL_DIRECTORY_SHARED "")
 
 # will add the "test" subdirectory and "test/Main.cpp"
 set(HAS_TESTS false)
@@ -46,7 +40,7 @@ set(ADD_BOOST false)
 list(APPEND BOOST_COMPONENTS )
 
 # Settings necessary for individual computer configurations go in this file
-include(${GENERIC_CMAKE_SUBDIRECTORY}/user_defined_settings.cmake)
+include(${GENERIC_CMAKE_SUBDIRECTORY}/user_settings.cmake)
 
 ### Build ###
 include(${GENERIC_CMAKE_SUBDIRECTORY}/project_build.cmake)
